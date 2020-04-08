@@ -1,0 +1,3 @@
+<app-post *ngFor="let post of post; index as i" [post]="post" (deleted)="onDelete($event)"></app-post>
+
+<app-post-form *ngIf="showPost" (submitted)="onSubmit($event)"></app-post-form>
